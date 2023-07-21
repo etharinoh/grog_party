@@ -1,0 +1,25 @@
+{
+  "name": "groggyrock",
+  "version": "1.0.0",
+  "description": "A localised electron version of groggybot.js the discord application",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron --disable-gpu ."
+  },
+  "author": "ehall",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "redis": "^4.6.7",
+    "url": "^0.11.1",
+    "uuid": "^9.0.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "groggy_backend",
+  "version": "1.0.0",
+  "description": "Backend express api for groggybot",
+  "main": "entrypoint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node entrypoint.js"
+  },
+  "author": "Ethan Hall",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "redis": "^4.6.7",
+    "uuid": "^9.0.0"
+  }
+}
