@@ -1,5 +1,6 @@
 # Groggy Rock
-This is to be a party game where players will connect and join on their mobile devices and set themselves into dice rolls, timers and randomised ruling.
+This is to be a party game where players will connect and join on their mobile devices and set themselves into dice rolls, timers and randomised ruli
+
 ## Structure
 ![structure](grog_party.drawio.png)
 

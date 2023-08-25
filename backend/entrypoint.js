@@ -3,6 +3,7 @@ const { v4: uuidv4 } = require('uuid');
 const express = require('express')
 const api = express()
 const redis = require('redis');
+const cors = require('cors');
 
 const redis_client = redis.createClient({
   socket: {
@@ -23,11 +24,13 @@ redis_client.on('error', err => console.log('Redis Server Error', err));
 redis_client.connect();
 
 
-const api_port = 3000
+const api_port = 3001
 api.use(bodyParser.json())
 api.use(bodyParser.urlencoded({ extended: false }))
+api.use(cors());
 
 api.get('/rules', (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*")
   res.send('Hello World!')
 })
 api.post('/rules', (req, res) => {
